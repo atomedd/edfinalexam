@@ -15,6 +15,22 @@ body {
   font-weight: bold;
 }
 
+
+.delete {
+  background-color: none;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.delete:hover {
+  color: gray;
+}
+
 h1 {
   color: #000;
   text-transform: uppercase;
@@ -51,7 +67,9 @@ p {
   padding: 5px 15px;
   border-radius: 5px;
   color: #ffffff;
-  background-color: #011a1f;
+  background-color: purple;
+  height: 40px;
+  width: 100px;
   transition: all 0.75s ease;
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
@@ -61,8 +79,29 @@ p {
 }
 
 #enter:hover {
-  background-color: #02798F;
-  color: #FFCD5D;
+  background-color: rgb(82, 14, 14);
+  color: white;
+}
+
+#askUserBtn {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: purple;
+  height: 40px;
+  width: 100px;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75 ease;
+  font-weight: normal;
+}
+
+#askUserBtn:hover {
+  background-color: rgb(82, 14, 14);
+  color: white;
 }
 
 ul {
@@ -92,8 +131,8 @@ li {
 }
 
 li:hover {
-  background: #d6d2dc;
-  color: #000;
+  background-color: rgb(82, 14, 14);
+  color: white;
 }
 
 li>button {
@@ -118,6 +157,3 @@ input {
   color: #00891E;
 }
 
-.delete {
-  display: none;
-}

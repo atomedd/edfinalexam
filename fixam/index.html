@@ -21,6 +21,44 @@
       background-color: #F0E68C;
       /* Initial color */
     }
+
+    /* Basic styling for the task input section */
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Styling for the list of tasks */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: purple;
+      color: white;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+
+    li.done {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+
   </style>
 </head>
 
@@ -28,34 +66,34 @@
   <div class="container">
     <div class="row">
       <div class="intro col-12">
-        <img class="rounded" src="https://guscanada.com/wp-content/uploads/2021/09/CCTB_logo_1_RGB.png">
-        <hr / width="80%">
+        <img class="rounded" src="https://guscanada.com/wp-content/uploads/2021/09/CCTB_logo_1_RGB.png" alt="CCTB Logo">
+        <hr width="80%">
 
         <h1>Pending Tasks</h1>
         <div>
           <div class="border1"></div>
-          <div c </div>
-          </div>
         </div>
 
+        <!-- Input section -->
         <div class="row">
           <div class="col-12">
             <input id="userInput" type="text" autocomplete="off" placeholder="New task..." maxlength="57">
             <button id="enter">Add</button>
-            <button id="enter">Ask user</button>
+            <button id="askUserBtn">Ask User</button>
           </div>
         </div>
 
-        <!-- Empty List -->
+        <!-- Task List -->
         <div class="row">
           <div class="listItems col-12">
-            <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+            <ul id="taskList" class="col-12 offset-0 col-sm-8 offset-sm-2">
+              <!-- Dynamic task list will appear here -->
             </ul>
           </div>
         </div>
-
       </div>
-      <script type="text/javascript" src="js/script.js"></script>
-</body>
+    </div>
+  </div>
 
-</html>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
